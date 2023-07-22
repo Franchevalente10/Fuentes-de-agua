@@ -1,0 +1,65 @@
+footer{
+    
+    background-color: $color-1;
+   margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+    bottom: 0;
+    width: 100%;
+
+h2{
+    font-family: 'PT Serif', serif;
+    font-size: x-large;
+    font-weight: 600;    
+}
+    .redes{
+       @include flex-center-column;
+        p{
+            color: black;
+            font-size: large;
+            font-family: $fuente-ancha;
+        }
+        a{
+            
+            i{
+                font-size: 3rem;
+                color: $color-5;
+                padding: 1rem;
+                &:hover{
+                    color: black;
+                    border-radius: 50%;
+                    background-color:$color-2;
+
+                }
+            }
+        }
+    }
+
+    .contacto-footer{
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin-right: 3rem;
+        p{
+            color: black;
+            font-size: large;
+            font-family: $fuente-ancha;
+        }
+   
+.wsp-email-footer{
+    @include d-flex-center;
+   
+        a{   
+            i{
+                font-size: 3rem;
+                color: black;
+                padding: 1rem;
+                &:hover{border-radius: 50%;
+                    background-color:$color-2;
+                }
+            }
+        }
+    }
+}
+}

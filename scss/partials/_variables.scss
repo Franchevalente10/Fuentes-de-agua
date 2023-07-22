@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+$fuente-textos:  'Rubik', sans-serif;
+$fuente-ancha: 'Anton', sans-serif;
+$fuente-titulos:  'Hind Madurai', sans-serif;
+$fuente-titulos2: 'Lobster', cursive;
+
+@mixin d-flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-center-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+$color-1:#9F7833;
+$color-2:#FFD791;
+$color-3:#413620;
+$color-4:#9C6615;
+$color-5:#CDD1DE;

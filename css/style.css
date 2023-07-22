@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+}
+header nav .container-fluid {
+  display: flex;
+}
+header nav .container-fluid .nombre-pagina a {
+  font-size: x-large;
+  font-family: "PT Serif", serif;
+  font-weight: 600;
+}
+header nav .container-fluid .collapse a {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: large;
+}
+header nav .container-fluid .collapse a:hover {
+  font-size: x-large;
+  background-color: #CDD1DE;
+  border-radius: 50%;
+}
+header nav .carrito {
+  margin-right: 1rem;
+  font-size: 3rem;
+}
+header nav .carrito:hover {
+  padding: 0.2rem;
+  background-color: #CDD1DE;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+main .contenedor-imagen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+main .contenedor-imagen img {
+  width: 100%;
+}
+main .contenedor-texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+main .contenedor-texto .texto p {
+  font-family: "Anton", sans-serif;
+  font-size: x-large;
+}
+main .contenedor-consejos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  width: 100%;
+}
+main .contenedor-consejos h2 {
+  font-size: xx-large;
+  font-family: "Hind Madurai", sans-serif;
+}
+main .contenedor-consejos .consejo p {
+  font-size: large;
+  font-family: "Rubik", sans-serif;
+}
+main .contenedor-de-consejos {
+  display: flex;
+  margin-top: 5rem;
+  gap: 2rem;
+}
+main .contenedor-de-consejos .contenedor-consejos-2 {
+  background-image: url(../img/imagen\ feng\ shui.webp);
+  background-size: cover;
+}
+main .contenedor-de-consejos .contenedor-consejos-2 .color-fondo-1 {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 215, 145, 0.4117647059);
+}
+main .contenedor-de-consejos .contenedor-consejos-2 .color-fondo-1 h2 {
+  font-size: x-large;
+  font-family: "Hind Madurai", sans-serif;
+}
+main .contenedor-de-consejos .contenedor-consejos-2 .color-fondo-1 p {
+  font-family: "Rubik", sans-serif;
+  font-size: medium;
+}
+main .contenedor-de-consejos .contenedor-consejos-2 .color-fondo-1 ul {
+  font-size: large;
+  font-family: "Anton", sans-serif;
+}
+main .contenedor-de-consejos .contenedor-consejos-3 {
+  background-image: url(../img/feng-shui\ 2.webp);
+  background-size: cover;
+}
+main .contenedor-de-consejos .contenedor-consejos-3 .color-fondo-2 {
+  color: white;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(65, 54, 32, 0.5725490196);
+}
+main .contenedor-de-consejos .contenedor-consejos-3 .color-fondo-2 h2 {
+  font-size: x-large;
+  font-family: "Hind Madurai", sans-serif;
+}
+main .contenedor-de-consejos .contenedor-consejos-3 .color-fondo-2 p {
+  font-family: "Rubik", sans-serif;
+  font-size: medium;
+}
+main .contenedor-de-consejos .contenedor-consejos-3 .color-fondo-2 ul {
+  font-size: large;
+  font-family: "Anton", sans-serif;
+}
+
+.main-fuentes h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  font-family: "Lobster", cursive;
+  -webkit-text-stroke: 1px #413620;
+}
+.main-fuentes .contenedor-stock-1 {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.main-fuentes .contenedor-stock-1 .card {
+  border: solid 2px black;
+  width: 25rem;
+}
+.main-fuentes .contenedor-stock-1 .card .card-body {
+  background-color: #CDD1DE;
+}
+.main-fuentes .contenedor-stock-1 .card .card-body h5 {
+  font-family: "Hind Madurai", sans-serif;
+  font-size: medium;
+}
+.main-fuentes .contenedor-stock-1 .card .card-body p {
+  font-size: small;
+  font-family: "Rubik", sans-serif;
+}
+.main-fuentes .contenedor-stock-2 {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main-fuentes .contenedor-stock-2 .card {
+  border: solid 2px black;
+  width: 25rem;
+}
+.main-fuentes .contenedor-stock-2 .card .card-body {
+  background-color: #CDD1DE;
+}
+.main-fuentes .contenedor-stock-2 .card .card-body h5 {
+  font-family: "Hind Madurai", sans-serif;
+  font-size: medium;
+}
+.main-fuentes .contenedor-stock-2 .card .card-body p {
+  font-size: small;
+  font-family: "Rubik", sans-serif;
+}
+
+.main-contacto {
+  background-size: cover;
+  background: rgb(159, 120, 51);
+  background: linear-gradient(0deg, rgb(159, 120, 51) 27%, rgb(179, 140, 70) 49%, rgb(197, 158, 88) 62%, rgb(226, 186, 116) 78%, rgb(255, 215, 145) 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-contacto h1 {
+  font-size: 10rem;
+  font-family: "Lobster", cursive;
+  -webkit-text-stroke: 1px #413620;
+}
+.main-contacto form {
+  border-radius: 10%;
+  padding: 5rem;
+  background-color: #FFD791;
+  justify-content: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.main-contacto form label {
+  font-size: large;
+  font-family: "Rubik", sans-serif;
+}
+.main-contacto form input {
+  border: 2px black solid;
+  font-size: medium;
+  width: 100%;
+  font-weight: 600;
+}
+.main-contacto form textarea {
+  border: 3px black solid;
+}
+.main-contacto form button {
+  font-size: medium;
+  font-weight: 600;
+}
+.main-contacto form button:hover {
+  background-color: #CDD1DE;
+  font-weight: bolder;
+}
+.main-contacto .consulta {
+  margin-top: 2rem;
+}
+.main-contacto .consulta p {
+  font-size: large;
+  font-family: "Anton", sans-serif;
+}
+
+footer {
+  background-color: #9F7833;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  height: 10rem;
+  bottom: 0;
+  width: 100%;
+}
+footer h2 {
+  font-family: "PT Serif", serif;
+  font-size: x-large;
+  font-weight: 600;
+}
+footer .redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .redes p {
+  color: black;
+  font-size: large;
+  font-family: "Anton", sans-serif;
+}
+footer .redes a i {
+  font-size: 3rem;
+  color: #CDD1DE;
+  padding: 1rem;
+}
+footer .redes a i:hover {
+  color: black;
+  border-radius: 50%;
+  background-color: #FFD791;
+}
+footer .contacto-footer {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+}
+footer .contacto-footer p {
+  color: black;
+  font-size: large;
+  font-family: "Anton", sans-serif;
+}
+footer .contacto-footer .wsp-email-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .contacto-footer .wsp-email-footer a i {
+  font-size: 3rem;
+  color: black;
+  padding: 1rem;
+}
+footer .contacto-footer .wsp-email-footer a i:hover {
+  border-radius: 50%;
+  background-color: #FFD791;
+}
+
+.main-carrito {
+  padding: 50px;
+}
+.main-carrito h1 {
+  font-family: "Anton", sans-serif;
+  font-size: xx-large;
+}
+.main-carrito .carrito-vacio {
+  margin-top: 5rem;
+}
+.main-carrito .carrito-vacio p {
+  font-family: "Rubik", sans-serif;
+  font-size: 3rem;
+}
+.main-carrito .carrito-vacio .btn {
+  margin-top: 1rem;
+  background-color: #FFD791;
+  font-size: 13px;
+  width: 14rem;
+  padding: 1.5rem;
+  border-radius: 45px;
+  border-style: none;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.main-carrito .carrito-vacio .btn:hover {
+  color: #FFD791;
+  background-color: #9F7833;
+  border: 2px black solid;
+}
+.main-carrito .total {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+.main-carrito .total p {
+  font-family: "Rubik", sans-serif;
+  font-weight: bolder;
+  font-size: x-large;
+}
+.main-carrito .linea {
+  margin-top: 12rem;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #9C6615;
+  padding: 10px;
+}
+.main-carrito .fuentes {
+  width: 100%;
+  height: 30px;
+}
+.main-carrito .fuentes p {
+  font-size: large;
+}
+.main-carrito .btn-comprar button {
+  color: #FFD791;
+  margin-top: 10rem;
+  background-color: #413620;
+  font-weight: bold;
+  font-size: 13px;
+  width: 14rem;
+  padding: 1.5rem;
+  border-radius: 45px;
+  border-style: none;
+}
+.main-carrito .btn-comprar button:hover {
+  color: black;
+  background-color: #FFD791;
+  border: 2px black solid;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,222 @@
+main{
+
+    .contenedor-imagen{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      
+    img{
+        width: 100%;
+    
+    }
+}
+
+.contenedor-texto {
+    @include d-flex-center;
+    width: 100%;
+    .texto{
+
+    p{
+font-family: $fuente-ancha;
+      
+        font-size: x-large;
+
+    }
+}
+}
+
+.contenedor-consejos{
+   
+    @include flex-center-column;
+    margin-top: 5rem;
+    width: 100%;
+h2{
+    font-size: xx-large;
+    font-family:$fuente-titulos;
+}
+
+.consejo{
+    p{
+        font-size: large;
+        font-family: $fuente-textos;
+    }
+}
+}
+.contenedor-de-consejos{
+    display: flex;
+margin-top: 5rem;
+gap: 2rem;
+
+.contenedor-consejos-2{
+   
+    background-image: url(../img/imagen\ feng\ shui.webp);
+    background-size: cover;
+    .color-fondo-1{
+        height: 100%;
+    width: 100%;
+        background-color: #ffd79169;;
+    h2{
+        font-size: x-large;
+    font-family:$fuente-titulos;
+    }
+    p{
+        font-family: $fuente-textos;
+        font-size: medium;
+    }
+    ul{
+        font-size: large;
+        font-family: $fuente-ancha;
+    }
+}
+}
+.contenedor-consejos-3{
+    background-image: url(../img/feng-shui\ 2.webp);
+    background-size:cover;
+  
+  .color-fondo-2{
+    color: white;
+    height: 100%;
+    width: 100%;
+     background-color:#41362092;
+    
+
+    h2{
+        font-size: x-large;
+    font-family:$fuente-titulos;
+    }
+    p{
+        font-family: $fuente-textos;
+        font-size: medium;
+    }
+    ul{
+        font-size: large;
+        font-family: $fuente-ancha;
+    }
+}
+}
+}
+
+
+}
+
+// MAIN FUENTES
+
+.main-fuentes{
+
+    h1{
+       
+        @include d-flex-center;
+        font-size: 8rem;
+        font-family: $fuente-titulos2;
+        -webkit-text-stroke: 1px $color-3;
+         
+         
+    }
+
+    .contenedor-stock-1{
+     
+        margin-top: 5rem;
+        width: 100%;
+        @include d-flex-center;
+        justify-content: space-around;
+
+        .card{
+            border: solid 2px black;
+            width: 25rem;
+
+            .card-body{
+                background-color: $color-5;
+            h5{
+                font-family: $fuente-titulos;
+                font-size: medium;
+            }
+            p{
+                font-size: small;
+                font-family:$fuente-textos ;
+            }
+        }
+        }
+    }
+
+    .contenedor-stock-2{
+       margin-top: 5rem;
+        width: 100%;
+        @include d-flex-center;
+        justify-content: space-evenly;
+
+        .card{
+            border: solid 2px black;
+            width: 25rem;
+
+            .card-body{
+                background-color: $color-5;
+            h5{
+                font-family: $fuente-titulos;
+                font-size: medium;
+            }
+            p{
+                font-size: small;
+                font-family:$fuente-textos ;
+            }
+        }
+        }
+    } 
+}
+
+// MAIN CONTACTO
+
+.main-contacto{
+  background-size: cover;
+   
+    background: rgb(159,120,51);
+    background: linear-gradient(0deg, rgba(159,120,51,1) 27%, rgba(179,140,70,1) 49%, rgba(197,158,88,1) 62%, rgba(226,186,116,1) 78%, rgba(255,215,145,1) 95%);
+@include flex-center-column;
+
+h1{
+    font-size: 10rem;
+    font-family: $fuente-titulos2;
+    -webkit-text-stroke: 1px $color-3;
+}
+
+form{
+   
+    border-radius: 10%;
+    padding: 5rem;
+    background-color: $color-2;
+    justify-content: start;
+    @include flex-center-column; 
+gap: 3rem;
+    label{
+        font-size: large;
+        font-family: $fuente-textos;
+    }
+    input{
+        border: 2px black solid;
+        font-size: medium;
+        width: 100%;  
+        font-weight: 600;
+    }
+    textarea{
+        border: 3px black solid;
+    }
+    button{
+        font-size: medium;
+        font-weight: 600;
+        &:hover{
+    background-color: $color-5;
+ font-weight: bolder;
+        }
+    }
+}
+.consulta{
+    margin-top: 2rem;
+    p{
+        font-size: large;
+        font-family: $fuente-ancha;
+    }
+}
+
+}

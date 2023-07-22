@@ -1,0 +1,45 @@
+header{
+
+    nav{
+    display: flex;
+    width: 100%;
+    .container-fluid{
+        display: flex;
+        
+        .nombre-pagina{
+            a{
+                font-size: x-large;
+                font-family: 'PT Serif', serif;
+                font-weight: 600;
+            }
+
+        }
+
+
+.collapse{
+    a{
+        font-family: 'Bebas Neue', sans-serif;
+font-size: large;
+&:hover{
+    font-size: x-large;
+    background-color: $color-5;
+    border-radius: 50%;
+}
+    }
+}
+
+    }
+
+    .carrito{
+        margin-right: 1rem;
+        font-size: 3rem;
+        &:hover{
+padding: 0.2rem;
+background-color: $color-5;
+border-radius: 50%;
+border: 1px solid black;
+        }
+    }
+    
+}  
+}
