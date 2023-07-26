@@ -106,6 +106,28 @@ gap: 2rem;
 
 .main-fuentes{
 
+.offcanvas{
+    p{
+       font-size: large;
+       font-weight: 600;
+    }
+    #carrito-container{
+        p{
+            font-size: large;
+            font-weight: 600;
+        }
+    }
+    .offcanvas-header{
+        h5{
+            font-weight: 600;
+            font-size: large;
+            
+        }
+    }
+}
+
+
+
     h1{
        
         @include d-flex-center;
@@ -115,6 +137,7 @@ gap: 2rem;
          
          
     }
+
 
     .contenedor-stock-1{
      

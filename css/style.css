@@ -133,6 +133,18 @@ main .contenedor-de-consejos .contenedor-consejos-3 .color-fondo-2 ul {
   font-family: "Anton", sans-serif;
 }
 
+.main-fuentes .offcanvas p {
+  font-size: large;
+  font-weight: 600;
+}
+.main-fuentes .offcanvas #carrito-container p {
+  font-size: large;
+  font-weight: 600;
+}
+.main-fuentes .offcanvas .offcanvas-header h5 {
+  font-weight: 600;
+  font-size: large;
+}
 .main-fuentes h1 {
   display: flex;
   justify-content: center;

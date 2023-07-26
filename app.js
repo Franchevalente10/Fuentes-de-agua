@@ -1,61 +1,88 @@
 
-class fuente {
-    constructor (nombre, precio){
-        this.nombre = nombre;
-        this.precio = precio;
-        
+  let total = 0;
+  let cartItems = [];
+
+  function agregarAlCarrito(nombreFuente, precio) {
+    const carritoContainer = document.getElementById('carrito-container');
+    const nuevoItem = document.createElement('div');
+    nuevoItem.innerHTML = `
+      <p>${nombreFuente} - $${precio}</p>
+      <button class="btn-eliminar" onclick="eliminarDelCarrito('${nombreFuente}')">Eliminar</button>
+    `;
+    carritoContainer.appendChild(nuevoItem);
+    total += precio;
+    document.getElementById('total').innerText = total;
+
+    const existeItem = cartItems.find(item => item.nombreFuente === nombreFuente);
+    if (!existeItem) {
+      cartItems.push({ nombreFuente, precio });
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
     }
-}
-
-const carrito = JSON.parse(localStorage.getItem('carrito')) || []; // Array de carrito
-
-// fuentes
-const troncosYRueda = new fuente ('troncosYRueda', 10000);
-const troncos = new fuente ('troncos', 10000);
-const patos = new fuente ('patos', 8000);
-const barriles = new fuente ('barriles', 7000);
-const aljibe = new fuente ('aljibe', 7000);
-const elefantes = new fuente ('elefantes', 8000);
-
-let total = 0;
-
-// elementos
-const elementoTotal = document.getElementById("totalCarrito");
-elementoTotal.innerText = total;
-const elementoFuentes = document.querySelector("#productos")
-
-
-document.getElementById("btnTroncosRueda").addEventListener("click", () => comprar(troncosYRueda));
-document.getElementById("btnTroncos").addEventListener("click", () => comprar(troncos));
-document.getElementById("btnPatos").addEventListener("click", () => comprar(patos));
-document.getElementById("btnBarriles").addEventListener("click", () => comprar(barriles));
-document.getElementById("btnAljibe").addEventListener("click", () => comprar(aljibe));
-document.getElementById("btnElefante").addEventListener("click", () => comprar(elefantes));
-
-
-function comprar(fuente) {
-    carrito.push(fuente);
-    // guardamos en el storage nuestro array de productos
-    localStorage.setItem('carrito', JSON.stringify(carrito));
-    total += fuente.precio;
-    actualizarHTML();
-   
   }
 
- function actualizarHTML(){
-    elementoFuentes.innerHTML = '';
-    for (const fuente of carrito) {
-        let productoFuente = 
-        `<div class='fuentes'>
-           <p> ${fuente.nombre} </p>
-           <p>   ${fuente.precio}</p>
-        </div>`;
-        elementoFuentes.innerHTML += productoFuente;
+  function eliminarDelCarrito(nombreFuente) {
+    const carritoContainer = document.getElementById('carrito-container');
+    const itemsEnCarrito = carritoContainer.querySelectorAll('div');
+    const itemAEliminar = Array.from(itemsEnCarrito).find(item => item.textContent.includes(nombreFuente));
+    if (itemAEliminar) {
+      const precio = parseInt(itemAEliminar.textContent.match(/\$(\d+)/)[1], 10);
+      total -= precio;
+      document.getElementById('total').innerText = total;
+      carritoContainer.removeChild(itemAEliminar);
+
+      
+      cartItems = cartItems.filter(item => item.nombreFuente !== nombreFuente);
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
     }
- }
+  }
 
+  document.addEventListener('DOMContentLoaded', function () {
+    const carritoContainer = document.getElementById('carrito-container');
+    carritoContainer.innerHTML = ''; 
 
+    const storedCartItems = localStorage.getItem('cartItems');
+    if (storedCartItems) {
+      cartItems = JSON.parse(storedCartItems);
+      cartItems.forEach((item) => {
+        agregarAlCarrito(item.nombreFuente, item.precio);
+      });
+    }
 
+  });
+  
 
+document.addEventListener('DOMContentLoaded', function () {
+  const btnTroncosRueda = document.getElementById('btnTroncosRueda');
+  const btnTroncos = document.getElementById('btnTroncos');
+  const btnPatos = document.getElementById('btnPatos');
+  const btnBarriles = document.getElementById('btnBarriles');
+  const btnAljibe = document.getElementById('btnAljibe');
+  const btnElefante = document.getElementById('btnElefante');
 
+  
 
+  btnTroncosRueda.addEventListener('click', function () {
+    agregarAlCarrito('Fuente de troncos con rueda', 10000);
+  });
+
+  btnTroncos.addEventListener('click', function () {
+    agregarAlCarrito('Fuente de troncos', 10000);
+  });
+
+  btnPatos.addEventListener('click', function () {
+    agregarAlCarrito('Fuente de Patos', 8000);
+  });
+
+  btnBarriles.addEventListener('click', function () {
+    agregarAlCarrito('Fuente de barriles', 7000);
+  });
+
+  btnAljibe.addEventListener('click', function () {
+    agregarAlCarrito('Fuente de aljibe', 7000);
+  });
+
+  btnElefante.addEventListener('click', function () {
+    agregarAlCarrito('Fuente de Elefantes', 8000);
+  });
+  
+});
