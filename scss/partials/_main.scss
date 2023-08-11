@@ -107,20 +107,41 @@ gap: 2rem;
 .main-fuentes{
 
 .offcanvas{
+    .btncomprar{
+        margin-left: 10rem;
+        width: 20rem;
+        font-size: larger;
+        font-weight: bold;
+    }
     p{
+        
        font-size: large;
        font-weight: 600;
     }
     #carrito-container{
+        
+        margin-bottom: 5rem;
+        .agregar-productos{
+            p{  font-size: large;
+                font-weight: 600;
+                font-family: $fuente-textos;
+            }
+            button{
+                margin-left: 3rem;
+                font-weight: 700;
+            }
+        }
         p{
             font-size: large;
             font-weight: 600;
         }
+        
     }
     .offcanvas-header{
         h5{
             font-weight: 600;
             font-size: large;
+            font-family: $fuente-textos;
             
         }
     }

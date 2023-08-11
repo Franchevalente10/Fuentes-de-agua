@@ -133,9 +133,27 @@ main .contenedor-de-consejos .contenedor-consejos-3 .color-fondo-2 ul {
   font-family: "Anton", sans-serif;
 }
 
+.main-fuentes .offcanvas .btncomprar {
+  margin-left: 10rem;
+  width: 20rem;
+  font-size: larger;
+  font-weight: bold;
+}
 .main-fuentes .offcanvas p {
   font-size: large;
   font-weight: 600;
+}
+.main-fuentes .offcanvas #carrito-container {
+  margin-bottom: 5rem;
+}
+.main-fuentes .offcanvas #carrito-container .agregar-productos p {
+  font-size: large;
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+}
+.main-fuentes .offcanvas #carrito-container .agregar-productos button {
+  margin-left: 3rem;
+  font-weight: 700;
 }
 .main-fuentes .offcanvas #carrito-container p {
   font-size: large;
@@ -144,6 +162,7 @@ main .contenedor-de-consejos .contenedor-consejos-3 .color-fondo-2 ul {
 .main-fuentes .offcanvas .offcanvas-header h5 {
   font-weight: 600;
   font-size: large;
+  font-family: "Rubik", sans-serif;
 }
 .main-fuentes h1 {
   display: flex;
